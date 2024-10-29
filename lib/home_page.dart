@@ -36,7 +36,10 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          ElevatedButton(onPressed: () {}, child: const Text('Click me')),
+          ElevatedButton(
+            onPressed: _getBatteryLevel,
+            child: const Text('Click me'),
+          ),
           const SizedBox(height: 10),
           Text(_batteryLevel),
         ],
